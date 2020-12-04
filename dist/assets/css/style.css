@@ -506,8 +506,7 @@ html, body {
 }
 
 .team .container .team-2 ul li:nth-of-type(5) .photo-info {
-    left: 232px;
-    white-space: nowrap;
+    left: 190px;
 }
 
 .team .container .team-2 ul li .photo {
@@ -604,6 +603,14 @@ html, body {
     .header .container .row-2 h1 {
         font-size: 38px;
     }
+
+    .team .container .team-2 ul li .photo {
+        transform: none !important;
+    }
+
+    .team .container .team-2 ul li:nth-of-type(5) .photo-info {
+        left: 50px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -617,6 +624,23 @@ html, body {
 
     .container .num {
         order: -1;
+    }
+
+    .team .container .team-2 ul li:nth-of-type(2),
+  .team .container .team-2 ul li:nth-of-type(3),
+  .team .container .team-2 ul li:nth-of-type(4),
+  .team .container .team-2 ul li:nth-of-type(5) {
+        padding: 0;
+        flex: 100%;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .team .container .team-2 ul li:nth-of-type(2) .photo-info,
+  .team .container .team-2 ul li:nth-of-type(3) .photo-info,
+  .team .container .team-2 ul li:nth-of-type(4) .photo-info,
+  .team .container .team-2 ul li:nth-of-type(5) .photo-info {
+        left: 0;
     }
 }
 
@@ -643,6 +667,29 @@ html, body {
         flex: 50%;
         text-align: center;
     }
+
+    .container .num {
+        flex: 100%;
+    }
+
+    .team .container .team-1 .letter {
+        display: none;
+    }
+
+    .team .container .team-1 .num {
+        top: -20%;
+    }
+
+    .team .container .team-2 ul .photo-top {
+        justify-content: center;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .team .container .team-2 ul .photo-top .photo-info {
+        left: 0;
+        width: 100%;
+    }
 }
 
 @media (max-width: 576px) {
@@ -651,7 +698,7 @@ html, body {
     }
 
     .header .container .row-2 h1 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .burger-menu-active .burger-menu-nav {
@@ -686,11 +733,61 @@ html, body {
         font-size: 14px;
     }
 
+    .team .container .team-2 ul {
+        padding: 0 15px;
+    }
+
+    .photo-info {
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .team .container .team-2 ul li .photo-info .name {
+        font-size: 28px;
+    }
+
+    .team .container .team-2 ul li .photo-info .spec {
+        font-size: 16px;
+    }
+
+    .team .container .team-2 ul li .photo-info .photo-text {
+        font-size: 14px;
+    }
+
     .project .container .project-2 a {
         flex: 100%;
     }
 
     .project .letter {
-        font-size: 400px;
+        display: none;
+    }
+
+    .team .container .team-2 ul li .photo-info {
+        width: 280px;
+    }
+
+    .num {
+        font-size: 100px;
+    }
+
+    .mission .container .text-left .num {
+        font-size: 100px;
+    }
+
+    .text-right img:hover {
+        box-shadow: none;
+    }
+
+    .team .container .team-2 ul li .photo {
+        box-shadow: none;
+    }
+
+    .team .container .team-2 ul li .photo-info {
+        width: 230px;
+    }
+
+    .num {
+        display: none;
     }
 }
