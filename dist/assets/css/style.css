@@ -254,6 +254,10 @@ html, body {
     color: rgba(255, 255, 255, 0.05);
 }
 
+.event .event-1 .num::before {
+    top: 20%;
+}
+
 .event .event-2 {
     min-height: 100vh;
     display: flex;
@@ -611,6 +615,10 @@ html, body {
     .team .container .team-2 ul li:nth-of-type(5) .photo-info {
         left: 50px;
     }
+
+    .header .container .row-2 {
+        overflow: hidden;
+    }
 }
 
 @media (max-width: 991px) {
@@ -642,6 +650,10 @@ html, body {
   .team .container .team-2 ul li:nth-of-type(5) .photo-info {
         left: 0;
     }
+
+    .event .event-1 {
+        overflow: hidden;
+    }
 }
 
 @media (max-width: 768px) {
@@ -666,10 +678,6 @@ html, body {
         margin-left: 0;
         flex: 50%;
         text-align: center;
-    }
-
-    .container .num {
-        flex: 100%;
     }
 
     .team .container .team-1 .letter {
@@ -789,5 +797,9 @@ html, body {
 
     .num {
         display: none;
+    }
+
+    .event .event-2 {
+        padding: 0 10px;
     }
 }
