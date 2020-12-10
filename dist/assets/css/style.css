@@ -169,6 +169,7 @@ html, body {
     background-color: #352e50;
     left: -100%;
     transition: 0.4s;
+    overflow: auto;
 }
 
 .burger-menu-active .burger-menu-nav {

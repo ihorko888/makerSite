@@ -1091,3 +1091,18 @@ $(function () {
     }
 
 });
+
+
+$('.burger-menu-nav').click(function () {
+    let getElement = $(this).attr('href');
+    if ($(getElement).length) {
+      let getOffset = $(getElement).offset().top;
+
+      $('.burger-menu-link').removeClass('burger-menu-active');
+    //   $('.burger-menu-link').removeClass('burger-menu-active');
+      $('html,body').animate({
+        scrollTop:getOffset
+      },400);
+    }
+    return false;
+});
